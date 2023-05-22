@@ -1,13 +1,12 @@
-import { Text } from 'react-native';
-
+import { Button } from '../../../shared/components/button';
 import { Input } from '../../../shared/components/input/input';
 import S from './styles';
 
 const Login = () => {
   return (
     <S.BoxContainer>
-      <Text>Login</Text>
       <Input />
+      <Button title="Entrar" margin="8px" />
     </S.BoxContainer>
   );
 };
