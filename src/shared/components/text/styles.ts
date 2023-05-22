@@ -8,6 +8,7 @@ interface TextProps {
 export default {
   TextCustom: styled.Text<TextProps>`
     font-size: ${({ fontSize }: TextProps) => fontSize};
+    font-family: Poppins-Bold;
     ${({ color }: TextProps) => (color ? `color: ${color}` : '')}
   `,
 };
