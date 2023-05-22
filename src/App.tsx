@@ -1,16 +1,12 @@
-import styled from 'styled-components/native';
+import { SafeAreaView } from 'react-native';
 
-const Container = styled.View`
-  justify-content: center;
-  align-items: center;
-`;
-const Text = styled.Text``;
+import Login from './modules/login';
 
 const App = () => {
   return (
-    <Container>
-      <Text>Projeto React Native</Text>
-    </Container>
+    <SafeAreaView>
+      <Login />
+    </SafeAreaView>
   );
 };
 
