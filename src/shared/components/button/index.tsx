@@ -23,7 +23,7 @@ const Button = ({ title, type, margin, loading, disabled, onPress, ...props }: I
 
   const renderText = (color: string) => (
     <>
-      <Text type={textTypes.BUTTON_MEDIUM} color={color}>
+      <Text type={textTypes.BUTTON_SEMIBOLD} color={color}>
         {title}
       </Text>
 
