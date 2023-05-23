@@ -10,6 +10,7 @@ const Login = () => {
 
   return (
     <S.BoxContainer>
+      <S.ImageLogo resizeMode="center" source={require('../../../assets/images/logo.png')} />
       <Input
         placeholder="Digite seu E-mail"
         placeholderTextColor={theme.colors.grayTheme.gray80}
