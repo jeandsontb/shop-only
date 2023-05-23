@@ -10,7 +10,11 @@ const Login = () => {
 
   return (
     <S.BoxContainer>
-      <Input placeholder="Digite seu E-mail" title="E-mail" />
+      <Input
+        placeholder="Digite seu E-mail"
+        placeholderTextColor={theme.colors.grayTheme.gray80}
+        title="E-mail"
+      />
       <Button
         type={theme.buttons.buttonsTheme.primary}
         title="ENTRAR"

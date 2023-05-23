@@ -8,9 +8,10 @@ import S from './styles';
 
 interface IInputProps extends TextInputProps {
   title?: string;
+  errorMessage?: string;
 }
 
-const Input = ({ title, ...props }: IInputProps) => {
+const Input = ({ title, errorMessage, ...props }: IInputProps) => {
   return (
     <DisplayFlexColumn>
       {title && (
@@ -23,7 +24,16 @@ const Input = ({ title, ...props }: IInputProps) => {
         </Text>
       )}
 
-      <S.Input {...props} />
+      <S.Input isError={!!errorMessage} {...props} />
+      {errorMessage && (
+        <Text
+          margin="0px 0px 0px 8px"
+          type={textTypes.PARAGRAPH_SMALL_SEMIBOLD}
+          color={theme.colors.orangeTheme.orange80}
+        >
+          {errorMessage}
+        </Text>
+      )}
     </DisplayFlexColumn>
   );
 };
