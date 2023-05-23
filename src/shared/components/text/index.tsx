@@ -13,26 +13,31 @@ const Text = ({ color, type, ...props }: TextProps) => {
   const fontSize = useMemo(() => {
     switch (type) {
       case textTypes.BUTTON_BOLD:
+      case textTypes.BUTTON_MEDIUM:
       case textTypes.BUTTON_REGULAR:
       case textTypes.BUTTON_LIGHT:
         return '18px';
 
       case textTypes.TITLE_BOLD:
+      case textTypes.TITLE_MEDIUM:
       case textTypes.TITLE_REGULAR:
       case textTypes.TITLE_LIGHT:
         return '24px';
 
       case textTypes.SUB_TITLE_BOLD:
+      case textTypes.SUB_TITLE_MEDIUM:
       case textTypes.SUB_TITLE_REGULAR:
       case textTypes.SUB_TITLE_LIGHT:
         return '20px';
 
       case textTypes.PARAGRAPH_SMALL_BOLD:
+      case textTypes.PARAGRAPH_SMALL_MEDIUM:
       case textTypes.PARAGRAPH_SMALL_REGULAR:
       case textTypes.PARAGRAPH_SMALL_LIGHT:
         return '10px';
 
       case textTypes.PARAGRAPH_BOLD:
+      case textTypes.PARAGRAPH_MEDIUM:
       case textTypes.PARAGRAPH_REGULAR:
       case textTypes.PARAGRAPH_LIGHT:
       default:
@@ -48,6 +53,13 @@ const Text = ({ color, type, ...props }: TextProps) => {
       case textTypes.PARAGRAPH_SMALL_BOLD:
       case textTypes.PARAGRAPH_BOLD:
         return 'Poppins-Bold';
+
+      case textTypes.TITLE_MEDIUM:
+      case textTypes.SUB_TITLE_MEDIUM:
+      case textTypes.BUTTON_MEDIUM:
+      case textTypes.PARAGRAPH_MEDIUM:
+      case textTypes.PARAGRAPH_SMALL_MEDIUM:
+        return 'Poppins-Medium';
 
       case textTypes.TITLE_LIGHT:
       case textTypes.SUB_TITLE_LIGHT:

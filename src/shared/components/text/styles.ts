@@ -8,6 +8,7 @@ interface TextProps {
 
 export default {
   TextCustom: styled.Text<TextProps>`
+    padding-top: 3px;
     font-size: ${({ fontSize }: TextProps) => fontSize};
     font-family: ${({ fontFamily }: TextProps) => fontFamily};
     ${({ color }: TextProps) => (color ? `color: ${color}` : '')}

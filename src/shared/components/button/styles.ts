@@ -23,6 +23,8 @@ export const ButtonGradient = styled.TouchableOpacity<ButtonProps>`
   width: 100%;
   height: 48px;
   border-radius: 4px;
+  flex-direction: row;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -31,11 +33,25 @@ export const ButtonGradient = styled.TouchableOpacity<ButtonProps>`
   ${({ margin }: ButtonProps) => (margin ? `margin: ${margin}` : '')}
 `;
 
-export const GradientButton = styled(LinearGradient)<ButtonProps>`
+export const StyleGradientButton = styled(LinearGradient)<ButtonProps>`
   width: 100%;
   height: 48px;
   border-radius: 4px;
+  flex-direction: row;
+  gap: 8px;
   justify-content: center;
   align-items: center;
+  ${({ margin }: ButtonProps) => (margin ? `margin: ${margin}` : '')}
+`;
+
+export const ButtomDisable = styled.TouchableOpacity<ButtonProps>`
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: ${theme.colors.grayTheme.gray100};
   ${({ margin }: ButtonProps) => (margin ? `margin: ${margin}` : '')}
 `;

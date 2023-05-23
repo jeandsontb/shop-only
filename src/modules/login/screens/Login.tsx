@@ -4,10 +4,19 @@ import { theme } from '../../../shared/theme/theme';
 import S from './styles';
 
 const Login = () => {
+  const handleClickButton = () => {
+    console.log('clicou');
+  };
+
   return (
     <S.BoxContainer>
       <Input />
-      <Button type={theme.buttons.buttonsTheme.primary} title="Entrar" margin="8px" />
+      <Button
+        type={theme.buttons.buttonsTheme.primary}
+        title="ENTRAR"
+        margin="8px"
+        onPress={handleClickButton}
+      />
     </S.BoxContainer>
   );
 };
