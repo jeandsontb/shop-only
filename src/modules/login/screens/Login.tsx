@@ -14,6 +14,14 @@ const Login = () => {
         placeholder="Digite seu E-mail"
         placeholderTextColor={theme.colors.grayTheme.gray80}
         title="E-mail"
+        margin="0px 0px 8px 0px"
+      />
+
+      <Input
+        placeholder="Digite sua senha"
+        placeholderTextColor={theme.colors.grayTheme.gray80}
+        secureTextEntry
+        title="Senha"
       />
       <Button
         type={theme.buttons.buttonsTheme.primary}
